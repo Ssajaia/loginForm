@@ -1,0 +1,125 @@
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+.image-sidebar {
+  flex: 1;
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.form-section {
+  flex: 2;
+  background-color: #f3f4f8;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content:center;
+  
+}
+.logo-box {
+  z-index: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  top: 20%;
+  
+}
+.logo-text{
+  font-family: 'aboreto', sans-serif;
+}
+.logo {
+  height: 70px;
+}
+.signup-form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form-row{
+  display: flex;
+  gap: 12px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.input-group input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button[type="submit"] {
+  background-color: #596D48; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+  width: 40%;
+}
+button[type="submit"]:hover {
+  background-color: #4338ca; /* darker indigo on hover */
+}
+
+.login-text {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-text a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+.intro-text {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #333;
+}
+.input-group input:invalid {
+  border-color: #dc2626;  /* red border */
+}
+.input-group input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e5e7eb;  /* default light gray */
+  border-radius: 4px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.input-group input:focus {
+  border-color: #4f46e5;  /* indigo blue */
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2); /* soft glow */
+  outline: none;
+}
+.input-group input:valid {
+  border-color: green;
+}
